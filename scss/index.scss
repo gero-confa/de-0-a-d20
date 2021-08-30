@@ -1,0 +1,190 @@
+@import "./normalize";
+@import "./variables";
+@import "./home";
+@import "./typo";
+@import "./glosario";
+@import "./onePage";
+@import "./resumiendo";
+@import "./faq";
+@import "./enlacesUtiles";
+@import "./max-wd-1024";
+@import "./max-wd-764";
+@import "./error";
+
+body {
+    font-size: 1.4rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    background-color: #F8ECC9;
+    color: $color-text;
+    text-decoration: none;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+header {
+    padding: 0px 50px;
+    div {
+        display: flex;
+        justify-content: center;
+    }
+    nav {
+        background-color: $color-secondary;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            li {
+                background-color: $color-secondary;
+                color: $color-text;
+                display: flex;
+                padding: 4px 10px;
+                margin: 0px 5px;
+                width: 140px;
+                text-align: center;
+                justify-content: space-around;
+                align-items: center;
+                transition: 1s;
+                font-weight: 700;            
+            }
+            li:hover {
+                transform: scale(1.2);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+    }
+}
+
+main {
+    padding: 0px 50px;
+    section {
+        display: flex;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    aside {
+        overflow: auto;
+        text-align: left;
+        margin-bottom: 1.5rem;
+        iframe {
+            width: 100%;
+        }
+    }    
+    picture {
+        width: 100%
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        overflow: hidden;
+    }
+}
+
+ol { 
+    display: block;
+    list-style: disc outside none;
+    margin: 1em 0;
+    padding: 0 0 0 0;
+    list-style-type: none;    
+}
+
+a {
+    text-decoration: solid;
+}
+
+footer {
+    font-family: 'STIX Two Math', serif;
+    background: linear-gradient(0deg, rgba(230,188,170,1) -20%, rgba(221,151,126,1) 30%);
+    .copyright {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        p {
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto {
+    color: black;
+    display: inline;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contentColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3rem 0px;
+    .texto {
+        margin-top: 3rem;
+    }
+    aside{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+}
+
+.redes {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    a{
+        display: flex;
+        align-items: center;
+    }
+    &__icono {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.banner {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    background-size: contain;
+    height: 100px;
+    color: black; 
+    background-image: url(../images/Untitled-1.png);
+    background-color: azure;
+    background-repeat: cover;
+    background-size:cover;
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+.internalLink {
+    font-weight: 700;
+}
+
+.resaltado{
+    font-style: italic;
+    font-weight: 500;
+}
+
+#titulo {
+    margin: 20px 0px 30px 0px;
+    width: 200px;
+    height: 120px;
+}

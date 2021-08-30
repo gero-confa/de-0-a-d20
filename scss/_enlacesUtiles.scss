@@ -1,0 +1,20 @@
+.enlacesUtiles {
+    text-align: left;
+    li {
+        margin: 20px 0px
+    }
+}
+
+.content {
+    &__cardList {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        li{
+            margin: 3rem;
+        }
+    }        
+}
+

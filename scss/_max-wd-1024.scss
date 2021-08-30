@@ -1,0 +1,20 @@
+@mixin intermedio {
+    @media only screen and (min-width: 764px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@include intermedio {
+        .contentBox {
+            display: flex;
+            flex-flow: column;
+        }
+        .onePageContainer {
+            display: flex;
+            flex-flow: column;
+        }
+        .contentHome {
+            display: flex;
+            flex-flow: column;
+        }
+}

@@ -1,0 +1,39 @@
+@mixin phone {
+    @media only screen and (max-width: 764px) {
+        @content;
+    }
+}
+
+@include phone {
+    .contentBox {
+        display: flex;
+        flex-flow: column;
+    }
+    .onePageContainer {
+        display: flex;
+        flex-flow: column;
+    }
+    .contentHome {
+        display: flex;
+        flex-flow: column;
+    }
+    body {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    h5, h6 {
+        font-size: 0.8rem;
+    }
+}

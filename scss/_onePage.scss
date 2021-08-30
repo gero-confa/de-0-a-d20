@@ -1,0 +1,19 @@
+.onePage {
+    text-align: justify;
+}
+
+.onePageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    aside {
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .contentColumn{
+        display: flex;
+        width: 50%;
+        min-width: 350px;
+        justify-content: flex-start;
+    }
+}

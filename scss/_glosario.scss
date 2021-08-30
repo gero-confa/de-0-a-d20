@@ -1,0 +1,58 @@
+table, th , td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 35%;
+    background-color: #F8F5F1;
+    margin-bottom: 2rem;
+}  
+
+.tabla {
+    width: 800px;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    h5{
+        text-align: center;
+        justify-self: center;
+        width: 100%;
+        color: darkolivegreen;
+    }
+}
+
+.glosario {
+    text-align: left;
+    .contentBox{
+        display: flex;
+        flex-direction: column;
+    }
+    &__lista {
+        background-color: #F8F5F1;
+    }
+}
+
+#profText {
+    width: 100%;
+    padding-right: 2rem;
+}
+
+.alignProficiency {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    &__contentBox{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#competencia {
+    width: 100%;
+    color: darkolivegreen;
+    th {
+        color: rgb(39, 51, 17);
+    }
+}
