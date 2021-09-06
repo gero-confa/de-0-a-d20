@@ -231,7 +231,17 @@ button {
     flex-flow: column; }
   .contentHome {
     display: flex;
-    flex-flow: column; } }
+    flex-flow: column; }
+  .resumiendoDnD .contentBox {
+    width: 100%; }
+  picture {
+    margin: 0% !important;
+    padding: 0% !important; }
+  .onePageContainer .contentColumn {
+    width: 100%;
+    margin: 0px; }
+    .onePageContainer .contentColumn section {
+      margin: 0; } }
 
 @media only screen and (max-width: 764px) {
   .contentBox {
@@ -255,7 +265,34 @@ button {
   h4 {
     font-size: 1rem; }
   h5, h6 {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+  header {
+    background-color: #F8F5F1;
+    display: flex;
+    margin-bottom: 2rem; }
+    header div {
+      align-self: center; }
+    header nav {
+      width: 100%; }
+      header nav ul {
+        flex-direction: column !important;
+        margin: 0; }
+        header nav ul li {
+          align-self: center; }
+  .banner {
+    display: none !important; }
+    .banner h1 {
+      display: none; }
+  .resumiendoDnD .contentBox {
+    width: 100%; }
+  picture {
+    margin: 0% !important;
+    padding: 0% !important; }
+  .onePageContainer .contentColumn {
+    width: 100%;
+    margin: 0px; }
+    .onePageContainer .contentColumn section {
+      margin: 0; } }
 
 .error {
   display: grid;

@@ -36,4 +36,46 @@
     h5, h6 {
         font-size: 0.8rem;
     }
-}
+    header {
+        background-color: #F8F5F1;
+        display: flex;
+        margin-bottom: 2rem;
+        div {
+            align-self: center;
+        }
+        nav {
+            width: 100%;
+            ul {
+                flex-direction: column !important;
+                margin: 0;
+                li {
+                    align-self: center;
+                }
+            }
+        }
+    }
+    .banner {
+        display: none !important;
+        h1 {
+            display: none;
+        }
+    }
+    .resumiendoDnD {
+        .contentBox {
+            width: 100%;
+            }
+        }
+    picture {
+        margin: 0% !important;
+        padding: 0% !important;
+    }
+    .onePageContainer {
+        .contentColumn {
+            width: 100%;
+            margin : 0px;
+            section {
+                margin: 0
+            }
+        }
+    }
+    }
