@@ -13,12 +13,36 @@
 </head>
 <body>
     <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-light p-4">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="resumiendo_dnd.html">Resumiendo D&D</a></li>
+                            <li><a href="one_page_games.html">RPG's de una pagina</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="glosario.html">Glosario</a></li>
+                            <li><a href="enlacesUtiles.html">Enlaces utiles</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <a href="index.html">
+                        <img src="images/download.png" alt="De 0 a 20" id="titulo">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <header class="menuDesktop">
         <div>
-            <a href="index.html">
-                <img src="images/download.png" alt="De 0 a 20" id="titulo">
-            </a>
+            <img src="images/download.png" alt="De 0 a 20" id="titulo">
         </div>
-        <nav>
+        <nav >
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="resumiendo_dnd.html">Resumiendo D&D</a></li>
@@ -27,12 +51,12 @@
                 <li><a href="glosario.html">Glosario</a></li>
                 <li><a href="enlacesUtiles.html">Enlaces utiles</a></li>
             </ul>
+            <div class="banner">
+                <h1>El primer paso en juegos de rol</h1>
+            </div>
         </nav>
     </header>
     <main class="glosario">
-        <div class="banner">
-            <h1><span class="resaltado">Glosario</span></h1>
-        </div>
         <div>
         <p><span class="resaltado"> D20? Competencia? Ventaja? </span> el rol trae términos que no acostumbramos a usar en nuestro día a día o que se inventaron solo para esto, por eso aca hay un pequeño glosario con términos utilizados en cualquier campaña promedio. (Si querés agregar algún término que no encontraste o que hayas hallado confuso en su momento por favor sugerilo a traves del formulario de discord.</p>
         </div>
@@ -50,6 +74,8 @@
                 <ol>
                     <li><a href="#prof">Proficiency/Competencia</a></li>
                     <li><a href="#abScore">Puntuación de característica (Ability Score)</a></li>
+                    <li><a href="#mej">Mejora de puntaje de característica</a></li>
+                    <li><a href="#dotes">Dotes/Feat</a></li>
                     <li><a href="#ac">Clase de Armadura(Armor Class/AC)</a></li>
                     <li><a href="#savingThrows">Tirada de Salvación(Saving Throws)</a></li>
                 </ol>
@@ -72,12 +98,22 @@
                 <h4 id="gm">GM</h4>
                     <p>Game Master: es una persona encargada de dirigir el juego, mantener las reglas y expandir el mundo en que se encuentra el juego. No significa que solo una persona solo deba conocer las reglas o que solo una persona expanda el mundo, todos los jugadores participán de ello.  </p>
                     <br/>
-            <h3 id="cDnd">Conceptos pertinentes a D&D</h3>
-        </div>
-        <div class="alignProficiency">
-            <div class="alignProficiency__content">
-                    <h4 id="prof">Proficiency/competencia</h4>
+                    <h3 id="cDnd">Conceptos pertinentes a D&D</h3>
+                </div>
+                <div class="alignProficiency">
+                    <div class="alignProficiency__content">
+                        <h4 id="prof">Proficiency/competencia</h4>
                         <p id="profText">La bonificación de competencia representa la habilidad de tu personaje para realizar ciertas actividades, sea en el uso de armas, herramientas o habilidades. La competencia se determina acorde a tu nivel y lo podrás ver reflejado en la tabla de nivel de tu clase.</p>
+                        <br/>
+                        <h4 id="abScore">Puntuación de característica</h4>
+                        <p id="profText">Seis características que determinan el estado de tu personaje: <span class="resaltado">Fuerza, Destreza, Constitución, Inteligencia, Sabiduría. Carisma</span>. Cada puntuación se relaciona con distintas acciones que se pueden realizar a lo largo de la campaña y afectaran el resultado del dado relacionado mediante <span>modificadores</span>.Los modificadores son un número negativo o positivo que van desde el valor -5 a 10, Por cada 2 puntos de característica, el modificador aumenta en 1, por ejemplo, si mi puntuación en carisma es de 2, mi modificador para carisma sera -4, y cada vez que necesite tirar dados para algo relacionado con carisma deberé restar 4 al dado.</p>
+                        <br/>
+                        <h4 id="mej">Mejora de puntaje de característica</h4>
+                        <p id="profText">Todas las clases tienen acceso a una mejora de +2 a un puntaje de característica o +1 a 2 características en los niveles 4, 8, 12, 16, y 19. La clase luchador tiene una mejora adicional a nivel 6 y otra a nivel 14. La clase pícaro tiene una mejora a nivel 10. Si la campaña (consultar los parametros con el/la DM) lo permite en lugar de tomar una mejora en estos niveles será posible obtener un "Dote" o "Feat"</p>
+                        <br/>
+                        <h4 id="dotes">Dotes/Feat</h4>
+                        <p id="profText">Un dote representa un talento o cualidad en un area especíica. Refleja entrenamiento, experiencia y habilidades que van mas allá de las clases. Para poder usar una se deberá cumplir con los prerequisitos de la misma, por ejemplo: el dote "apresador" requiere un puntaje de fuerza de al menos 13. Otras no requieren un puntaje específico, idealmente elegirías una que se relacione con tu personaje en términos de historia y tu hoja de personaje por lo tanto el requisito se suele cumplir sin complicaciones.</p>
+                        <br/>
             </div>
             <div class="tabla">
                         <h5>Tabla de nivel/competencia de un paladín</h5>
@@ -172,9 +208,6 @@
             </div>
         </div>
         <div class="textoDesarrollo">
-                <h4 id="abScore">Puntuación de característica</h4>
-                    <p>Seis características que determinan el estado de tu personaje: <span class="resaltado">Fuerza, Destreza, Constitución, Inteligencia, Sabiduría. Carisma</span>. Cada puntuación se relaciona con distintas acciones que se pueden realizar a lo largo de la campaña y afectaran el resultado del dado relacionado mediante <span>modificadores</span>.Los modificadores son un número negativo o positivo que van desde el valor -5 a 10, Por cada 2 puntos de característica, el modificador aumenta en 1, por ejemplo, si mi puntuación en carisma es de 2, mi modificador para carisma sera -4, y cada vez que necesite tirar dados para algo relacionado con carisma deberé restar 4 al dado.</p>
-                    <br/>
                 <h4 id="ac">Clase de armadura</h4>
                     <p>Representa como lo dice, la armadura de un personaje, y es el número que se necesita alcanzar como mínimo para lograr un ataque exitoso. Supongamos que con un personaje nivel 1 ataco con un arma cuerpo a cuerpo con la que tengo competencia(+2) y mi puntuación para fuerza es 16 (modificador de fuerza +3), mi tirada de ataque será de d20 + 2 + 3, y para que sea exitosa deberá alcanzar el valor de AC de mi objetivo.</p>
                     <br/>
@@ -188,10 +221,10 @@
             <a href="https://twitter.com/Gero_geice" target="_blank">
                 <img src="images/twitter.svg" alt="Twitter" class="redes__icono"><h5>TWITTER</h5>
             </a>
-            <a href="https://discord.gg/fdKDdFfx" target="_blank">
+            <a href="https://discord.gg/Q86yjyeS" target="_blank">
                 <img src="images/discord.png" alt="Discord" class="redes__icono"><h5>DISCORD</h5>
             </a>
-            <a href="https://cafecito.app/" target="_blank">
+            <a href="https://cafecito.app/geicedm" target="_blank">
                 <img src="images/cafecito_logo.svg" alt="Cafecito" class="redes__icono"><h5>CAFECITO</h5>
             </a>
         </div>
@@ -199,6 +232,7 @@
             <h6>copyright 2021 GeiceContents</h6>
         </div>
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
 

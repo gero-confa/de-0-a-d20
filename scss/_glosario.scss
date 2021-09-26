@@ -25,12 +25,29 @@ table{
 
 .glosario {
     text-align: left;
+    .banner {
+        background-image: url(/images/banners/glosario.jpg);
+        h1 {
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+        }
+    }
     .contentBox{
         display: flex;
         flex-direction: column;
     }
     &__lista {
         background-color: #F8F5F1;
+        ol {
+            li {
+                h4{
+                    margin: 0px;
+                }
+            }
+            padding-left: 3rem;
+            ol {
+                margin-top: 0px;
+            }
+        }
     }
 }
 

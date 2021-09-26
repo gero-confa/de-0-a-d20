@@ -1,5 +1,13 @@
 .onePage {
     text-align: justify;
+    .banner {
+        background-image: url(/images/banners/onepage.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        h1 {
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+        }
+    }
 }
 
 .onePageContainer {

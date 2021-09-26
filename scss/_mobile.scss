@@ -43,6 +43,7 @@
             align-self: center;
         }
         nav {
+            margin: 0 0 0 0;
             width: 100%;
             ul {
                 flex-direction: column !important;
@@ -98,3 +99,15 @@
         background-color: $color-secondary;
     }
     }
+
+@mixin smallPhone {
+        @media only screen and (max-width: 560px) {
+            @content;
+        }
+}
+
+@include smallPhone {
+    #titulo {
+        display: none;
+    }
+}
